@@ -16,13 +16,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Java 21 installieren
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '21'
 
-      - name: Gradle einrichten
+      - name: Gradle 8.10.2 einrichten
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
 
       - name: Mod bauen
         run: gradle build
@@ -32,4 +34,3 @@ jobs:
         with:
           name: Shiendstunn-JAR
           path: build/libs/shiendstunn-*.jar
-          id 'fabric-loom' version '1.7-SNAPSHOT'
