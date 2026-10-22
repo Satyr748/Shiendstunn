@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "shiendstunn",
+  "version": "${version}",
+  "name": "Shiendstunn",
+  "description": "Erlaubt Spielern, mit /fgt zwischen Survival und Creative zu wechseln.",
+  "authors": ["Shiendstunn"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.shiendstunn.ShiendstunnMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
