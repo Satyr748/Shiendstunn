@@ -32,3 +32,4 @@ jobs:
         with:
           name: Shiendstunn-JAR
           path: build/libs/shiendstunn-*.jar
+          id 'fabric-loom' version '1.7-SNAPSHOT'
